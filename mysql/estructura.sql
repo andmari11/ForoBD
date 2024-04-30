@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 30-04-2024 a las 14:42:21
+-- Tiempo de generación: 30-04-2024 a las 14:56:29
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `abd`
 --
+CREATE DATABASE IF NOT EXISTS `abd` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish2_ci;
+USE `abd`;
 
 -- --------------------------------------------------------
 
@@ -114,10 +116,6 @@ CREATE TABLE `usuario` (
 ALTER TABLE `bloqueados`
   ADD KEY `id_usuario` (`id_usuario`);
 
-
-ALTER TABLE `usuario`
-  ADD PRIMARY KEY (`id`);
-
 --
 -- Indices de la tabla `favoritos_foro`
 --
@@ -151,6 +149,8 @@ ALTER TABLE `mensaje`
 --
 -- Indices de la tabla `usuario`
 --
+ALTER TABLE `usuario`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -216,11 +216,7 @@ ALTER TABLE `likes_mensajes`
 ALTER TABLE `mensaje`
   ADD CONSTRAINT `mensaje_ibfk_1` FOREIGN KEY (`foro_id`) REFERENCES `foro` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `mensaje_ibfk_2` FOREIGN KEY (`usuario_id`) REFERENCES `usuario` (`id`) ON DELETE SET NULL;
-
---
--- Filtros para la tabla `usuario`
---
-
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
