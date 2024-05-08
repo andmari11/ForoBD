@@ -43,9 +43,6 @@ class FormularioForoEditar extends Formulario
                 <label for="destacado">Destacado</label>
                 <input type="checkbox" id="destacado" name="destacado" {$destacado}>
 
-                </div>
-
-                <div>
                 <input type="hidden" name="id" value="$this->id">
                 <input type="submit" value="Guardar Cambios">
             </div>

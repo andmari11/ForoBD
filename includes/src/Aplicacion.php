@@ -297,12 +297,6 @@ class Aplicacion
         return $this->usuarioLogueado() && ($_SESSION['rol'] == 'a');
     }
 
-    public function esEditor()
-    {
-        $this->compruebaInstanciaInicializada();
-        return $this->usuarioLogueado() && ($_SESSION['rol'] == 'e');
-    }
-
     public function esModerador()
     {
         $this->compruebaInstanciaInicializada();

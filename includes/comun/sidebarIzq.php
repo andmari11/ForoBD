@@ -9,7 +9,7 @@ function mostrarLista()
     echo "<ul>";
     echo "<li><a href='index.php'><i class='fa-solid fa-house'></i>Inicio</a></li>";
     echo "<li><a href='forosContenido.php'><i class='fas fa-comment'></i>Foro</a></li>";
-    if(($app->usuarioLogueado()) && ($app->esAdmin() or $app->esModerador() or $app->esEditor())){
+    if(($app->usuarioLogueado()) && ($app->esAdmin() or $app->esModerador() )){
         
         echo "<li><a href='admin.php'><i class='fas fa-user-cog'></i>Administrar</a></li>";
     }

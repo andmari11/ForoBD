@@ -23,7 +23,7 @@ class FormularioUsuarioEdit extends Formulario
         $email = $usuario->getEmail(); 
         $rol = $usuario->getRol();
         $app = Aplicacion::getInstance();
-        if (!$app->esAdmin() && !$app->esEditor() && $app->getUsuarioID()!=$usuario->getId()) {
+        if (!$app->esAdmin() && $app->getUsuarioID()!=$usuario->getId()) {
             return "ACCESO DENEGADO";
         }
 
@@ -54,7 +54,6 @@ EOF;
                 <div>
                     <label>Rol:</label> 
                     <select name="rol">
-                    <option value="e" $e>Editor</option>
                     <option value="m" $m>Moderador</option>
                     <option value="u" $u>Usuario</option>
                     </select>

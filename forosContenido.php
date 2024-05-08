@@ -55,7 +55,22 @@ $forosDestacados = es\ucm\fdi\aw\foros\Foro::listaForos();
 if ($forosDestacados != NULL) {
     foreach ($forosDestacados as $foro) {
         $contenido .= '<div class="foro">';
-        $contenido .= '<h3><a href="foroDinamico.php?id=' . $foro->getId() . '">' . $foro->getTitulo() . '</a></h3>';
+        if($foro->getDestacado()){
+            $contenido.="<h3>";
+        }
+        else{
+            $contenido.="<h4>";
+
+        }
+        $contenido .= '<a href="foroDinamico.php?id=' . $foro->getId() . '">' . $foro->getTitulo() . '</a>';
+        if($foro->getDestacado()){
+            $contenido.="</h3>";
+  
+        }
+        else{
+            $contenido.="</h4>";
+
+        }
         if($foro->getImagen()!=null){
 
             $contenido .= '<div class="foro-imagen">'; 

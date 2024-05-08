@@ -87,7 +87,7 @@ if($app->esAdmin() || $app->esModerador()){
 
 
 
-if(!$app->esAdmin() and !$app->esEditor() and !$app->esModerador()) {
+if(!$app->esAdmin()  and !$app->esModerador()) {
     $contenido = <<<EOS
     <h1>Panel de Administración  </h1>
     <p> ACCESO DENEGADO. </p>
