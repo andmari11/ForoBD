@@ -1,3 +1,3 @@
 <footer>
-	<h3>Pasión, orgullo y coraje</h3>
+	<h3>Conectando ruedas, creando conversaciones</h3>
 </footer>

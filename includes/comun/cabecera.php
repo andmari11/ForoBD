@@ -39,8 +39,8 @@ function mostrarSaludo()
 <header>
     
     <div class ="Logo">
-        <img src="img/logo.png" alt="logo">
-        <h1>GoalLink</h1>
+        <img src="img/wheeltalk.png" alt="logo">
+        <h1>WheelTalk</h1>
     </div>
     
     <div class="saludo">

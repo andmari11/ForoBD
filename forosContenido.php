@@ -100,4 +100,4 @@ EOS;
 }
 
 $params = ['tituloPagina' => $titulo, 'contenidoPrincipal' => $contenido];
-$app->generaVista('/esqueleto.php', $params);
+$app->generaVista('/esqueleto2.php', $params);

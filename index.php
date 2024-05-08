@@ -24,9 +24,9 @@ EOS;
 
 
 $contenido .= <<<EOS
-               
-        <div id ='foros'>
-            <h2>Foros destacados</h2>
+        <h2>Foros destacados</h2>      
+        <div id ='foros-principal'>
+            
             
 EOS;
 
@@ -34,7 +34,7 @@ $forosDestacados = es\ucm\fdi\aw\foros\Foro::listaDestacados(1);
 
 if ($forosDestacados != NULL) {
     foreach ($forosDestacados as $foro) {
-        $contenido .= '<div class="foro">';
+        $contenido .= '<div class="foro-principal">';
         $contenido .= '<h3><a href="foroDinamico.php?id=' . $foro->getId() . '">' . $foro->getTitulo() . '</a></h3>';
         if($foro->getImagen()!=null){
 

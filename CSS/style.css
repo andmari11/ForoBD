@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&family=Rakkas&family=Signika+Negative:wght@300..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 body {
     background-color: #f5f5f5;
     margin: 0;
-    font-family: 'Signika Negative', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 
 div#contenedor {
+   
     width: 100%;
     margin: auto;
     border: 1px solid #e0e0e0;
@@ -18,10 +18,11 @@ div#contenedor {
 }
 
 header {
+    font-family: 'Lato', sans-serif;
     padding: 10px;
     height: 100px;
     width: 100%;
-    background-color: rgb(2, 199, 2);
+    background-color: rgb(255, 3, 3);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -125,7 +126,7 @@ nav {
     float: left;
     width: 170px;
     height: 800px;
-    background-color: #e6fbde;
+    background-color: #fddada;
     margin-top: 70px;
     
 }
@@ -253,7 +254,7 @@ i {
 #container h2{
     text-align: center; 
     font-size: 36px; 
-    color: #62a370; 
+    color: #d54242; 
     margin-bottom: 20px; 
     font-weight: bold; 
     text-transform: uppercase; 
@@ -270,7 +271,7 @@ i {
 
 #container h3 a {
     text-decoration: none; 
-    color: #62a370; 
+    color: #d54242; 
     transition: color 0.3s ease; 
 }
 
@@ -290,6 +291,19 @@ i {
     margin-bottom: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 
+}
+
+#foros-principal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    flex: 1;
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding: 15px; 
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 #foros{
@@ -335,6 +349,17 @@ i {
     color: #01579b; 
 }
 
+.foro-principal{
+    border-bottom: 1px solid #ccc; 
+    padding: 20px; 
+    margin: 20px; 
+    border: 2px;
+    box-shadow: 0px 0px 10px 0px rgb(160, 164, 160) inset;
+    background-color: #fff; 
+    border-radius: 10px; 
+    width: calc(50% - 100px);
+}
+
 .foro{
     border-bottom: 1px solid #ccc; 
     padding: 20px; 
@@ -344,8 +369,6 @@ i {
     background-color: #fff; 
     border-radius: 10px; 
 }
-
-
 
 
 .admin-buttons {

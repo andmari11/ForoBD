@@ -12,4 +12,4 @@ $contenidoPrincipal=<<<EOF
 EOF;
 
 $params = ['tituloPagina' => $tituloPagina, 'contenidoPrincipal' => $contenidoPrincipal];
-$app->generaVista('/esqueleto.php', $params);
+$app->generaVista('/esqueleto2.php', $params);

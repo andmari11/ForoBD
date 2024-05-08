@@ -23,7 +23,7 @@
 #container-user h2{
     text-align: center; 
     font-size: 36px; 
-    color: #62a370; 
+    color: #d54242; 
     margin-bottom: 20px; 
     font-weight: bold; 
     text-transform: uppercase; 
@@ -40,7 +40,7 @@
 
 #container-user h3 a {
     text-decoration: none; 
-    color: #62a370; 
+    color: #d54242; 
     transition: color 0.3s ease; 
 }
 
@@ -57,7 +57,7 @@
 #container-foros h2{
     text-align: center; 
     font-size: 36px; 
-    color: #62a370; 
+    color: #d54242; 
     margin-bottom: 20px; 
     font-weight: bold; 
     text-transform: uppercase; 
@@ -74,10 +74,23 @@
 
 #container-foros h3 a {
     text-decoration: none; 
-    color: #62a370; 
+    color: #d54242; 
     transition: color 0.3s ease; 
 }
 
+#container-foros h4 {
+    text-align: center; 
+    font-size: 16px; 
+    color: #333; 
+    margin-bottom: 10px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+}
+#container-foros h4 a {
+    text-decoration: none; 
+    color: #040000; 
+    transition: color 0.3s ease; 
+}
 #container-foros h3 a:hover {
     color: #01579b; 
 }
@@ -112,7 +125,7 @@
 .titulo-foro{
     text-align: center; 
     font-size: 36px; 
-    color: #62a370; 
+    color: #d54242; 
     margin-bottom: 20px; 
     font-weight: bold; 
     text-transform: uppercase;
@@ -150,7 +163,7 @@
     
 }
 .mensaje{
-    border-top: 2px solid rgb(2, 199, 2); 
+    border-top: 2px solid rgb(255, 0, 21); 
   
 }
 .userfoto{
@@ -240,3 +253,38 @@ a.usermsg-admin:hover {
 .tabla-foros th {
     background-color: #f2f2f2;
 }
+
+.foro-imagenes-din{
+    display: flex;
+    flex-direction: row;
+}
+
+.foro-imagen-dinamico{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    
+    margin: 10px;
+    
+    padding: 15px; 
+    margin-bottom: 20px;
+    
+}
+.foro-imagen-din{
+    width: 100%;
+    height: 100%;
+}
+.foro-form{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    
+    margin: 10px;
+    
+    padding: 15px; 
+    margin-bottom: 20px;
+   
+   
+}
+
+

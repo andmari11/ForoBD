@@ -22,7 +22,7 @@ header {
     padding: 10px;
     height: 100px;
     width: 100%;
-    background-color: rgb(2, 199, 2);
+    background-color: rgb(255, 3, 3);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -126,7 +126,7 @@ nav {
     float: left;
     width: 170px;
     height: 800px;
-    background-color: #e6fbde;
+    background-color: #fcb7b7;
     margin-top: 70px;
     
 }
