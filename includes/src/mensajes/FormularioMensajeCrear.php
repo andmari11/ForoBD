@@ -1,10 +1,10 @@
 <?php
-namespace es\ucm\fdi\aw\mensajes;
+namespace es\ucm\fdi\abd\mensajes;
 
-use es\ucm\fdi\aw\Aplicacion;
-use es\ucm\fdi\aw\Formulario;
-use es\ucm\fdi\aw\mensajes\Mensaje;
-use es\ucm\fdi\aw\usuarios\Usuario;
+use es\ucm\fdi\abd\Aplicacion;
+use es\ucm\fdi\abd\Formulario;
+use es\ucm\fdi\abd\mensajes\Mensaje;
+use es\ucm\fdi\abd\usuarios\Usuario;
 
 
 class FormularioMensajeCrear extends Formulario {

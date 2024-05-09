@@ -1,7 +1,7 @@
 <?php
-namespace es\ucm\fdi\aw\foros;
-use es\ucm\fdi\aw\Aplicacion;
-use es\ucm\fdi\aw\Formulario;
+namespace es\ucm\fdi\abd\foros;
+use es\ucm\fdi\abd\Aplicacion;
+use es\ucm\fdi\abd\Formulario;
 
 class FormularioForoEditar extends Formulario
 {

@@ -2,7 +2,7 @@
 
 require_once __DIR__.'/includes/config.php';
 
-$formLogin = new \es\ucm\fdi\aw\usuarios\FormularioLogin();
+$formLogin = new \es\ucm\fdi\abd\usuarios\FormularioLogin();
 $formLogin = $formLogin->gestiona();
 
 

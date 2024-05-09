@@ -2,12 +2,12 @@
 
 require_once __DIR__.'/includes/config.php';
 
-use es\ucm\fdi\aw\foros\FormularioForoFavorito;
-use es\ucm\fdi\aw\Aplicacion;
-use es\ucm\fdi\aw\mensajes\FormularioMensajeLike;
-use es\ucm\fdi\aw\mensajes\FormularioMensajeEliminar;
-use es\ucm\fdi\aw\usuarios\FormularioUsuarioBloquear;
-use es\ucm\fdi\aw\usuarios\Usuario;
+use es\ucm\fdi\abd\foros\FormularioForoFavorito;
+use es\ucm\fdi\abd\Aplicacion;
+use es\ucm\fdi\abd\mensajes\FormularioMensajeLike;
+use es\ucm\fdi\abd\mensajes\FormularioMensajeEliminar;
+use es\ucm\fdi\abd\usuarios\FormularioUsuarioBloquear;
+use es\ucm\fdi\abd\usuarios\Usuario;
 
 
 
@@ -21,7 +21,7 @@ if ($id_foro === false) {
     exit;
 }
 
-$foro = es\ucm\fdi\aw\foros\Foro::getForoById($id_foro);
+$foro = es\ucm\fdi\abd\foros\Foro::getForoById($id_foro);
 
 if ($foro === null) {
     $contenido.= 'No se encontró la foro.';
@@ -48,7 +48,7 @@ if($foro->getImagen()!=null){
 }
 $contenido .= '<div class="foro-form">';
 if($app->usuarioLogueado() and !Usuario::consultarBloqueo($app->getUsuarioID())){    
-    $form = new \es\ucm\fdi\aw\mensajes\FormularioMensajeCrear($id_foro);
+    $form = new \es\ucm\fdi\abd\mensajes\FormularioMensajeCrear($id_foro);
     $contenido.= $form->gestiona();
 
     if(($app->esModerador() or $app->esAdmin())){

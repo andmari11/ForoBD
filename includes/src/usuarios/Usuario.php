@@ -1,7 +1,7 @@
 <?php
-namespace es\ucm\fdi\aw\usuarios;
+namespace es\ucm\fdi\abd\usuarios;
 
-use es\ucm\fdi\aw\Aplicacion;
+use es\ucm\fdi\abd\Aplicacion;
 define("PIMIENTA", 'wheeltalk');
 
 class Usuario

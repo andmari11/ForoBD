@@ -32,7 +32,7 @@ date_default_timezone_set('Europe/Madrid');
 spl_autoload_register(function ($class) {
 
     // project-specific namespace prefix
-    $prefix = 'es\\ucm\\fdi\\aw\\';
+    $prefix = 'es\\ucm\\fdi\\abd\\';
 
     // base directory for the namespace prefix
     $base_dir = implode(DIRECTORY_SEPARATOR, [__DIR__, 'src', '']);
@@ -63,7 +63,7 @@ spl_autoload_register(function ($class) {
 
 define('INSTALADA', true);
 
-$app = \es\ucm\fdi\aw\Aplicacion::getInstance();
+$app = \es\ucm\fdi\abd\Aplicacion::getInstance();
 $app->init(array('host'=>BD_HOST, 'bd'=>BD_NAME, 'user'=>BD_USER, 'pass'=>BD_PASS), RUTA_APP, RAIZ_APP);
 
 if (! INSTALADA) {

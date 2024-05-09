@@ -1,8 +1,7 @@
 <?php
 
 require_once __DIR__.'/includes/config.php';
-use es\ucm\fdi\aw\foros;
-use es\ucm\fdi\aw\noticias;
+use es\ucm\fdi\abd\foros;
 
 $titulo = 'Index';
 $contenido = '';
@@ -30,7 +29,7 @@ $contenido .= <<<EOS
             
 EOS;
 
-$forosDestacados = es\ucm\fdi\aw\foros\Foro::listaDestacados(1);
+$forosDestacados = es\ucm\fdi\abd\foros\Foro::listaDestacados(1);
 
 if ($forosDestacados != NULL) {
     foreach ($forosDestacados as $foro) {

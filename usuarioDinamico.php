@@ -2,12 +2,12 @@
 
 require_once __DIR__.'/includes/config.php';
 
-use es\ucm\fdi\aw\mensajes\Mensaje;
-use es\ucm\fdi\aw\Aplicacion;
-use es\ucm\fdi\aw\mensajes\FormularioMensajeLike;
-use es\ucm\fdi\aw\mensajes\FormularioMensajeEliminar;
-use es\ucm\fdi\aw\usuarios\FormularioUsuarioBloquear;
-use es\ucm\fdi\aw\usuarios\Usuario;
+use es\ucm\fdi\abd\mensajes\Mensaje;
+use es\ucm\fdi\abd\Aplicacion;
+use es\ucm\fdi\abd\mensajes\FormularioMensajeLike;
+use es\ucm\fdi\abd\mensajes\FormularioMensajeEliminar;
+use es\ucm\fdi\abd\usuarios\FormularioUsuarioBloquear;
+use es\ucm\fdi\abd\usuarios\Usuario;
 
 
 
@@ -16,7 +16,7 @@ $app = Aplicacion::getInstance();
 
 $id_usuario = $_GET['id'];
 
-$usuario = es\ucm\fdi\aw\usuarios\Usuario::buscaUsuarioPorId($id_usuario);
+$usuario = es\ucm\fdi\abd\usuarios\Usuario::buscaUsuarioPorId($id_usuario);
 $contenido = '';
 
 if ($usuario === null) {

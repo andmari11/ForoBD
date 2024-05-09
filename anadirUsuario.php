@@ -2,7 +2,7 @@
 
 require_once __DIR__.'/includes/config.php';
 
-$form = new \es\ucm\fdi\aw\usuarios\FormularioUsuarioNuevo();
+$form = new \es\ucm\fdi\abd\usuarios\FormularioUsuarioNuevo();
 $form = $form->gestiona();
 
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace es\ucm\fdi\aw;
+namespace es\ucm\fdi\abd;
 use Exception;
-use es\ucm\fdi\aw\usuarios\Usuario;
+use es\ucm\fdi\abd\usuarios\Usuario;
 
 /**
  * Clase que mantiene el estado global de la aplicación.

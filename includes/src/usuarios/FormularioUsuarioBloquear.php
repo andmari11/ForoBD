@@ -1,9 +1,9 @@
 <?php
 
-namespace es\ucm\fdi\aw\usuarios;
+namespace es\ucm\fdi\abd\usuarios;
 
-use es\ucm\fdi\aw\Aplicacion;
-use es\ucm\fdi\aw\Formulario;
+use es\ucm\fdi\abd\Aplicacion;
+use es\ucm\fdi\abd\Formulario;
 
 class FormularioUsuarioBloquear extends Formulario
 {

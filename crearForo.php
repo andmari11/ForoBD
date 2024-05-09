@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__.'/includes/config.php';
 
-$formForo = new \es\ucm\fdi\aw\foros\FormularioForo();
+$formForo = new \es\ucm\fdi\abd\foros\FormularioForo();
 $formForoHTML = $formForo->gestiona();
 
 $titulo = 'Crear Foro';

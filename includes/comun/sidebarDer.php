@@ -3,7 +3,7 @@
     <h3>Foros destacados</h3>
     <ul>
         <?php
-            use \es\ucm\fdi\aw\foros\Foro;
+            use \es\ucm\fdi\abd\foros\Foro;
 
             // Obtener la lista de foros destacados
             $forosDestacados = Foro::listaDestacados(1);

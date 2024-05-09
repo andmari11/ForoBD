@@ -51,41 +51,6 @@ header {
     background-color: #f2f2f2;
 }
 
-/* Estilos para la tabla de noticias */
-.tabla-noticias {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 30px;
-}
-
-.tabla-noticias th,
-.tabla-noticias td {
-    border: 1px solid #dddddd;
-    padding: 8px;
-    text-align: left;
-}
-
-.tabla-noticias th {
-    background-color: #f2f2f2;
-}
-
-/* Estilos para la tabla de ligas */
-.tabla-ligas {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 30px;
-}
-
-.tabla-ligas th,
-.tabla-ligas td {
-    border: 1px solid #dddddd;
-    padding: 8px;
-    text-align: left;
-}
-
-.tabla-ligas th {
-    background-color: #f2f2f2;
-}
 
 header a,
 header a:visited {
@@ -318,36 +283,6 @@ i {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
-.noticia{
-    
-    border-bottom: 1px solid #ccc; 
-    padding: 20px; 
-    margin-bottom: 20px; 
-    border: 2px;
-    box-shadow: 0px 0px 10px 0px rgb(160, 164, 160) inset;
-    background-color: #fff; 
-    border-radius: 10px; 
-
-}
-
-.noticia h3 {
-    text-align: center; 
-    font-size: 24px; 
-    color: #333; 
-    margin-bottom: 10px; 
-    font-weight: bold; 
-    text-transform: uppercase; 
-}
-
-.noticia h3 a {
-    text-decoration: none; 
-    color: #62a370; 
-    transition: color 0.3s ease; 
-}
-
-.noticia h3 a:hover {
-    color: #01579b; 
-}
 
 .foro-principal{
     border-bottom: 1px solid #ccc; 
@@ -431,67 +366,6 @@ i {
     color: #62a370; 
     font-weight: bold;
     text-transform: uppercase;
-}
-
-@media screen and (max-width: 1510px) {
-    #container {
-        display: block; 
-    }
-
-    .noticia,
-    .foroscontent {
-        width: 100%; 
-    }
-
-    .main-esqueleto2 {
-        padding: 10px;
-        float: left;
-        min-height: 800px;
-        width: 50%;
-        background-color: white;
-        margin-top: 70px;
-    }
-
-    div.saludo {
-        width: 30%;
-        display: flex;
-        margin-right: 80px;
-        align-items: center;
-        text-align: right;
-        font-weight: bold;
-        
-    }
-
-    main {
-        padding: 10px;
-        float: left;
-        min-height: 800px;
-        width: 34%;
-        background-color: white;
-        margin-top: 70px;
-    }
-
-    aside {
-        padding: 10px;
-        float: right;
-        width: 20%;
-        height: 800px;
-        background-color: #e6fbde;
-        margin-top: 70px;
-        right: 0;
-        
-    }
-
-    nav {
-        padding: 10px;
-        float: left;
-        width: 20%;
-        height: 800px;
-        background-color: #e6fbde;
-        margin-top: 70px;
-        
-    }
-
 }
 
 

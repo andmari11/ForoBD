@@ -1,8 +1,8 @@
 <?php
 
 require_once __DIR__.'/includes/config.php';
-use es\ucm\fdi\aw\foros;
-use es\ucm\fdi\aw\Aplicacion;
+use es\ucm\fdi\abd\foros;
+use es\ucm\fdi\abd\Aplicacion;
 
 $titulo = 'Foro';
 
@@ -20,7 +20,7 @@ if ($app->usuarioLogueado()) {
                 <h2>Foros favoritos</h2>
         EOS;
         
-        $forosFavoritos = es\ucm\fdi\aw\foros\Foro::listaFavoritos($app->getUsuarioID());
+        $forosFavoritos = es\ucm\fdi\abd\foros\Foro::listaFavoritos($app->getUsuarioID());
         if ($forosFavoritos != NULL) {
             foreach ($forosFavoritos as $foro) {
                 $contenido .= '<div class="foro">';
@@ -50,7 +50,7 @@ if ($app->usuarioLogueado()) {
             
 EOS;
 
-$forosDestacados = es\ucm\fdi\aw\foros\Foro::listaForos();
+$forosDestacados = es\ucm\fdi\abd\foros\Foro::listaForos();
 
 if ($forosDestacados != NULL) {
     foreach ($forosDestacados as $foro) {

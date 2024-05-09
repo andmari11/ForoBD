@@ -1,7 +1,7 @@
 <?php
 
 require_once __DIR__.'/includes/config.php';
-$formRegistro = new \es\ucm\fdi\aw\usuarios\FormularioRegistro();
+$formRegistro = new \es\ucm\fdi\abd\usuarios\FormularioRegistro();
 $formRegistro = $formRegistro->gestiona();
 
 

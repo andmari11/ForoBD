@@ -1,9 +1,9 @@
 <?php
 
-namespace es\ucm\fdi\aw\mensajes;
+namespace es\ucm\fdi\abd\mensajes;
 
-use es\ucm\fdi\aw\Aplicacion;
-use es\ucm\fdi\aw\usuarios\Usuario;
+use es\ucm\fdi\abd\Aplicacion;
+use es\ucm\fdi\abd\usuarios\Usuario;
 
 class Mensaje
 {
@@ -123,7 +123,7 @@ class Mensaje
             }
             if($array){
 
-                usort($lista, array('es\ucm\fdi\aw\mensajes\Mensaje', 'compararFechasHora'));
+                usort($lista, array('es\ucm\fdi\abd\mensajes\Mensaje', 'compararFechasHora'));
             }
 
             return $lista;
@@ -198,7 +198,7 @@ class Mensaje
             }
             if($array){
 
-                usort($lista, array('es\ucm\fdi\aw\mensajes\Mensaje', 'compararFechasHora'));
+                usort($lista, array('es\ucm\fdi\abd\mensajes\Mensaje', 'compararFechasHora'));
             }
 
             return $lista;

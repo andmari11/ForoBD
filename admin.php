@@ -1,9 +1,9 @@
 <?php
 require_once __DIR__.'/includes/config.php';
-use es\ucm\fdi\aw\Aplicacion;
-use es\ucm\fdi\aw\usuarios\FormularioUsuarioBloquear;
-use es\ucm\fdi\aw\usuarios\FormularioUsuarioEliminar;
-use es\ucm\fdi\aw\foros\FormularioForoEliminar;
+use es\ucm\fdi\abd\Aplicacion;
+use es\ucm\fdi\abd\usuarios\FormularioUsuarioBloquear;
+use es\ucm\fdi\abd\usuarios\FormularioUsuarioEliminar;
+use es\ucm\fdi\abd\foros\FormularioForoEliminar;
 
 $titulo = "Administración";
 $contenido="<h2>Panel de Administración</h2>";
@@ -12,7 +12,7 @@ if($app->esAdmin()){
     $contenido .= <<<EOS
     <h3>Usuarios   <a href='anadirUsuario.php'>Añadir nuevo usuario</a></h3>
     EOS;
-    $usuarios=es\ucm\fdi\aw\usuarios\Usuario::listaUsuario();
+    $usuarios=es\ucm\fdi\abd\usuarios\Usuario::listaUsuario();
     if ($usuarios !== NULL) {
         $contenido .= "<table class='tabla-usuarios'>";
         $contenido .= "<tr><th>Id</th><th>Nombre</th><th>Imagen</th><th>Email</th><th>Rol</th><th>Editar </th><th> Eliminar </th><th> Bloquear </th></tr>";
@@ -62,7 +62,7 @@ if($app->esAdmin() || $app->esModerador()){
     <h3>Foros
     <a href="crearForo.php">Crear foro</a></h3>
     EOS;
-    $foros = \es\ucm\fdi\aw\foros\Foro::listaForos();
+    $foros = \es\ucm\fdi\abd\foros\Foro::listaForos();
     if ($foros !== NULL) {
         $contenido .= "<table class='tabla-foros'>";
         $contenido .= "<tr><th>Id</th><th>Nombre</th><th>Descripción</th><th>Fecha</th><th>Favoritos</th><th>Destacado</th><th>Editar</th><th>Eliminar</th></tr>";

@@ -1,7 +1,7 @@
 <?php
-namespace es\ucm\fdi\aw\foros;
-use es\ucm\fdi\aw\Aplicacion;
-use es\ucm\fdi\aw\mensajes\Mensaje;
+namespace es\ucm\fdi\abd\foros;
+use es\ucm\fdi\abd\Aplicacion;
+use es\ucm\fdi\abd\mensajes\Mensaje;
 
 class Foro
 {
@@ -83,7 +83,7 @@ class Foro
                 $foro= new Foro($array["id"], $array["titulo"], $array["descripcion"], $array["fecha"], $array["favoritos"], $array["destacado"],  $array["imagen"]);
                 $lista[]=$foro;
             }
-            usort($lista, array('es\ucm\fdi\aw\foros\Foro', 'compararFechas'));
+            usort($lista, array('es\ucm\fdi\abd\foros\Foro', 'compararFechas'));
 
             return $lista;
             
@@ -109,7 +109,7 @@ class Foro
                 $foro= self::getForoById($array['foro_id']);;
                 $lista[]=$foro;
             }
-            usort($lista, array('es\ucm\fdi\aw\foros\Foro', 'compararFechas'));
+            usort($lista, array('es\ucm\fdi\abd\foros\Foro', 'compararFechas'));
 
             return $lista;
             
