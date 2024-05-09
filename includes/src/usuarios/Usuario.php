@@ -2,7 +2,7 @@
 namespace es\ucm\fdi\aw\usuarios;
 
 use es\ucm\fdi\aw\Aplicacion;
-define("PIMIENTA", 'goallink');
+define("PIMIENTA", 'wheeltalk');
 
 class Usuario
 {

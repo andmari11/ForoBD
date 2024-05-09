@@ -26,11 +26,10 @@ SET time_zone = "+00:00";
 --
 
 INSERT INTO `usuario` (`id`, `nombre`, `email`, `password`, `rol`, `imagen`, `salt`) VALUES
-(1, 'admin', 'admin@example.com', '$2y$10$xoDmWOinxwlyAYxlnXo5JeM1n1mQoKK6z4UaAKtT7CziCrJaoQKX2', 'a', NULL, 580752289),
-(2, 'usuario1', 'usuario1@ucm.es', '$2y$10$5y9eFMhVow9hiodyqvn3Ye4mOHeau4AXPN/d3xLMTtazrM/H1PVTW', 'm', 'img/usuarios/images.jpeg', 1184907616),
-(3, 'usuario2', 'usuario2@ucm.es', '$2y$10$wgeKrGaME5saF6AtoYghvuO8liMr6ZiM/6Aw/dPxRzVVdQmgPkYsm', 'u', 'img/usuarios/persona.jpeg', 447971337),
-(4, 'usuario3', 'usuario3@ucm.es', '$2y$10$WVPGM18GFRAj7EeGpNMSRODBy7T18.4nVgyCYsGsxWcac3vivqLbu', 'u', NULL, 202657812);
-
+(1, 'admin', 'admin@example.com', '$2y$10$JMpBLjk507o5d7KBwRO7ZO4EnM3.AG7z0L9umO7Iif288h1QEiTiS', 'a', NULL, 472468008),
+(2, 'usuario1', 'usuario1@ucm.es', '$2y$10$dciEpueJfQEhFeh7QbTN0u/OtRrMx/7R2ptDezI6zs2U4YqFWdda2', 'm', 'img/usuarios/images.jpeg', 1274595737),
+(3, 'usuario2', 'usuario2@ucm.es', '$2y$10$AeeeTQoleGlV9oCnyhfs3u3LfedZA8.9mB1.eo4IIaIXz82qQYKHS', 'u', 'img/usuarios/persona.jpeg', 723130259),
+(4, 'usuario3', 'usuario3@ucm.es', '$2y$10$U3/Lc2WhQDc/BebqgO4nFerq.qhbhf6pDodlo0.NVyevoECcdEQry', 'u', NULL, 576599373);
 --
 -- Volcado de datos para la tabla `foro`
 --
